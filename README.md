@@ -85,7 +85,7 @@ pip install deepface numpy
 
 📝 Auteur
 ---------
-Projet développé par [Ton Nom]
+Projet développé par [Mouhamed FAYE]
 Licence : MIT
 
 🎥 Extraction de Visages à partir de Vidéos
