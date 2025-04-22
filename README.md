@@ -1,5 +1,3 @@
-# systeme-de-reconnaissance-faciale
-Capture images et vidéos ensuite une classification des images
 🧰 Fonctionnement
 -----------------
 - Utilisation du classificateur Haar pour la détection de visages (`haarcascade_frontalface_alt.xml` requis).
@@ -92,3 +90,25 @@ Licence : MIT
 ===========================================
 
 Ce module extrait automatiquement les visages détectés dans des vidéos présentes dans un dossier, enregistre les images extraites dans une base de données `photos.db` et les vidéos segmentées dans `videos.db`.
+
+===========================
+📦 Script 3 : Classification des visages par clustering (DBSCAN)
+===========================
+
+Ce script permet de regrouper automatiquement les images extraites (visages) à partir de vidéos, en clusters représentant des personnes distinctes, via la méthode de clustering DBSCAN.
+
+🔧 Détails techniques :
+- Chargement des chemins d'accès depuis la base de données SQLite "photos.db"
+- Vérification des fichiers images valides (suppression des entrées invalides)
+- Détection faciale avec OpenCV (Haar Cascade)
+- Extraction de vecteurs faciaux par mise à l'échelle et flattening de la région du visage
+- Clustering avec DBSCAN (paramètres : eps=5.0, min_samples=2)
+- Classement des images par personne dans un dossier `ClassifiedPhoto4/Photos/person_X/`
+
+📊 Statistiques finales affichées :
+- Nombre d'images traitées
+- Nombre d'images classées
+- Pourcentage d'images classées
+- Temps d'exécution total
+
+💡 Objectif : Générer un classement automatique des visages pour mieux organiser les photos selon les personnes identifiées.
