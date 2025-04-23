@@ -14,7 +14,7 @@
 
 🛠️ Pré-requis supplémentaires
 -----------------------------
-- OpenCV (`pip install opencv-python`)
+- OpenCV ---------- pip install opencv-python
 - Fichier Haar Cascade (`haarcascade_frontalface_alt.xml`), disponible sur : https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt.xml
 
 🧪 Exemple de commande
@@ -55,9 +55,9 @@ ClassifiedPhoto3/       # Généré automatiquement
 🛠️ Pré-requis
 -------------
 - Python ≥ 3.7
-- DeepFace
-- SQLite3
-- Pillow, NumPy, etc.
+- DeepFace       ------- pip install deepface
+- SQLite3        ------- 
+- Pillow, NumPy  ------- pip install pillow numpy matplotlib opencv-python scikit-learn facenet-pytorch
 
 Installation rapide :
 ---------------------
@@ -87,7 +87,7 @@ Projet développé par [Mouhamed FAYE]
 Licence : MIT
 
 🎥 Extraction de Visages à partir de Vidéos
-===========================================
+==========================
 
 Ce module extrait automatiquement les visages détectés dans des vidéos présentes dans un dossier, enregistre les images extraites dans une base de données `photos.db` et les vidéos segmentées dans `videos.db`.
 
