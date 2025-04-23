@@ -91,7 +91,6 @@ Licence : MIT
 
 Ce module extrait automatiquement les visages détectés dans des vidéos présentes dans un dossier, enregistre les images extraites dans une base de données `photos.db` et les vidéos segmentées dans `videos.db`.
 
-===========================
 📦 Script 3 : Classification des visages par clustering (DBSCAN)
 ===========================
 
